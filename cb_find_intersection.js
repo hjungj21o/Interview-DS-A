@@ -21,7 +21,7 @@ function FindIntersection(strArr) {
         if (elFirst.includes(elSec[i])) result.push(elSec[i]);
     };
 
-    return result.join(",");
+    return result.length ? result.join(",") : false;
 
 }
 
