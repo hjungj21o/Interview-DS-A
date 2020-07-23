@@ -27,19 +27,41 @@
 // Output: [0, 0, 0, 0]
 
 var smallerNumbersThanCurrent = function(nums) {
-    const obj = {};
+    let unsorted = nums.slice();
+    let sorted = nums.sort((a, b) => a - b);
+    let obj = {};
+    let arr = [];
     
-    for (num of nums) {
-        if (!obj[num]) obj[num] = 0;
+    for(let i = 0; i < nums.length; i++) {
+        if (!obj[sorted[i]] && obj[sorted[i]] !== 0) obj[sorted[i]] = i;
+    };
+    
+    for(let i = 0; i < nums.length; i++) {
+        arr.push(obj[unsorted[i]])
     }
+    console.log(unsorted)
     
-    for (let i = 0; i < nums.length; i++) {
-        let count = 0;
-        for (let j = 0; j < nums.length; j++) {
-            if (nums[i] > nums[j]) count ++;
-        }
-        result.push(count);
-    }
-    
-    return result;
+    return arr;
 };
+
+var smallerNumbersThanCurrent = function(nums) {
+    let j = nums.length - 1;
+    let arr = [];
+    let i = 0
+    let counter = 0;
+    while(i < nums.length) {
+        
+        if (nums[i] > nums[j]) {
+            counter ++;
+        }
+        j--;
+        
+        if (j < 0) {
+            arr.push(counter);
+            i++;
+            j = nums.length - 1;
+            counter = 0;
+        }
+    }
+    return arr;
+}
