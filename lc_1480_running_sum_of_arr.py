@@ -2,9 +2,7 @@
 
 # Return the running sum of nums.
 
- 
-
-# Example 1:
+ # Example 1:
 
 # Input: nums = [1,2,3,4]
 # Output: [1,3,6,10]
@@ -16,3 +14,5 @@ class Solution:
         for i in range(1, len(nums)):
             result.append(result[-1] + nums[i])
         return result
+
+        
