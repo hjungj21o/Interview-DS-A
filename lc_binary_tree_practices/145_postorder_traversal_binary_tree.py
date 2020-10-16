@@ -6,36 +6,34 @@
 #         self.right = right
 class Solution:
     def postorderTraversal(self, root: TreeNode) -> List[int]:
-#         #recursive
-#         if not root: return None
-#         result = []
-        
-#         def dfs(node):
-#             if node.left: dfs(node.left)
-#             if node.right: dfs(node.right)
-#             result.append(node.val)
-            
-#         dfs(root)
-#         return result
-    
-#         stack = []
-#         result = []
-        
-#         while stack or root:
-#             if root:
-#                 if root:
-#                     if root.right: stack.append(root.right)
-#                     stack.append(root.left)
-#                     root = root.left
-#                 else:
-#                     root = stack.pop()
-#                     result.append(root.val)
-#                     root = root.left
-                    
-#             return result
-    
-        
-        
+        #         #recursive
+        #         if not root: return None
+        #         result = []
+
+        #         def dfs(node):
+        #             if node.left: dfs(node.left)
+        #             if node.right: dfs(node.right)
+        #             result.append(node.val)
+
+        #         dfs(root)
+        #         return result
+
+        #         stack = []
+        #         result = []
+
+        #         while stack or root:
+        #             if root:
+        #                 if root:
+        #                     if root.right: stack.append(root.right)
+        #                     stack.append(root.left)
+        #                     root = root.left
+        #                 else:
+        #                     root = stack.pop()
+        #                     result.append(root.val)
+        #                     root = root.left
+
+        #             return result
+
 """
     postorder = left, right, root
     
