@@ -66,7 +66,34 @@
 """
 
 
-def candy_crush(s):
+
+def candy_crush1(s):
+    stack = []
+
+    for char in s: 
+        if stack:
+            if char == stack[-1][0]:
+                stack[-1][1] += 1
+            else:
+                if stack[-1][1] >= 3:
+                    stack.pop()
+                if stack and stack[-1][0] == char:
+                    stack[-1][1] += 1
+                else:
+                    stack.append([char, 1])
+        else:
+            stack.append([char, 1])
+
+    if stack[-1][1] >= 3:
+        stack.pop()
+
+    res = []
+    for char, num in stack:
+        res.append(char * num)
+    return "".join(res)
+
+
+def candy_crush2(s):
     stack = []
 
     for char in s:
@@ -91,12 +118,8 @@ def candy_crush(s):
 
 # print("hello")
 # print(candy_crush("aaabbbc"))
-print(candy_crush("aaabbbbc"))
+print(candy_crush1("aaabbbbc"))
+print(candy_crush2("aaabbbbc"))
 # print(candy_crush("aabbbacd"))
-# print(candy_crush("aabbccddeeedcbax"))
-
-# "aabbccddeeedcba"
-# aabbccdd
-
-# s[i] = d
-# s[i - 1] = e
+print(candy_crush1("aabbccddeeedcbax"))
+print(candy_crush2("aabbccddeeedcbax"))
