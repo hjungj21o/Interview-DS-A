@@ -95,3 +95,14 @@ class LRUCache():
             # update the value.
             node.value = value
             self._move_to_head(node)
+
+
+"""
+    It's important to note that it should be a doubly linked list along with a hash
+        hash - get, put (lookup, insertion) are both constant time
+        however, ordering isn't.
+
+        Enter doubly linked list. DLL makes sense because node can be removed with only references to themselves.
+        And with the DLL, we can now order things the way we want to and retrive info from hash 
+
+"""
