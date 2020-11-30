@@ -24,12 +24,21 @@ Tell me about yourself:
 
 What interested you in this role? (Why x company?)
     - Bloomberg: 
-        -- First exposure to Bloomberg during a meeting with the media team to discuss ads sales
-        -- Didn't think much of it back then but now that I'm a SWE, I realize how much effort it took to build out the ads platform
-        -- When I moved to NY, realized almost all bankers and Wall St. friends all talked about the Bloomberg Terminal
-            -- If it's so widely used in the industry, I realized how great the product is
-        -- When I interviewed Bloomberg SWEs and interviewees alike for their experiences, one common word came up a lot: "collaborative"
-            -- Even in interview settings, there's a high level of collaboration. I thrive and learn the most in that setting, so would love to be a part of the org.
+        2 Approaches - Personal & Professional:
+
+        Personal:
+            -- I had a chance to chat with the media sales team to discuss ads for one of my conservation clients in 2016
+            -- One thing that really stuck with me was how the team brought up Bloomberg Philanthropies
+                -- "Bloomberg matches contributions to causes that employees believe in"
+                -- "Bloomberg Philanthropies dedicates itself to improving the health and safety of the planet"
+            -- As I would like to consider myself a philanthropist and for social goods, I was glad to hear that BBG care not only about its employees but also the environment.
+        Professional:
+            -- When I interviewed Bloomberg SWEs for their experiences, one common theme came up a lot: "collaborative"
+                -- Experienced this in my own personal interviews the past rounds too
+                -- Even in interview settings, there's a high degree of collaboration. I thrive and learn the most in that setting, so would love to be a part of the org.
+            -- The number of projects going on in Bloomberg:
+                -- I know there are many projects going in Bloomberg like improving the BBG Terminal, working on the news/media team for non-financial projects, etc.
+
 
 
 Biggest challenge faced so far during coding?
